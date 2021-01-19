@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900,100,200);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900,100,200);
 
 body{
   font-family: 'Raleway', sans-serif;
@@ -250,7 +250,7 @@ ul.menu-icon a{
 
 ul.menu-icon i{
   padding:20px;
-  background:black;
+  background:rgb(0, 0, 0);
 }
 
 ul.menu-icon a:hover{
