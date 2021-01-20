@@ -206,6 +206,7 @@ ul.social-icon a{
   float:right;
   font-size:50px;
   border-bottom:0;
+  border-color:rgb(11, 202, 202);
   color:rgb(11, 202, 202);
   padding-right:0px !important;
 }
