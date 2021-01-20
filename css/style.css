@@ -204,7 +204,7 @@ ul.social-icon{
 
 ul.social-icon a{
   float:right;
-  font-size:15px;
+  font-size:50px;
   border-bottom:0;
   color:rgb(11, 202, 202);
   padding-right:0px !important;
@@ -589,7 +589,7 @@ footer{
 #footer-left{text-align:left;}
 
 .footer-margin .copyright{
-  color: rgb(11, 202, 202);
+  color: rgb(0, 0, 0);
   letter-spacing: 1px;
   font-size: 12px;
   width: 100%;
