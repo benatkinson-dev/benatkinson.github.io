@@ -206,12 +206,12 @@ ul.social-icon a{
   float:right;
   font-size:50px;
   border-bottom:0;
-  color:rgb(11, 202, 202);
+  color:rgb(0, 0, 0);
   padding-right:0px !important;
 }
 
 ul.social-icon a:hover{
-  color:#000000;
+  color:rgb(11, 202, 202);
 }
 
 .menu-index{
@@ -613,7 +613,7 @@ footer{
 }
 
 .footer-margin .social-footer a:hover{
-  color:#000000;
+  color:rgb(11, 202, 202);
 }
 
 
