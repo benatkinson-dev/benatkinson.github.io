@@ -242,7 +242,10 @@ function hidePreloader() {
 
 
 
-})//End
+})
+/*----------------------------------
+Back to top button 
+----------------------------------*/
 
 var btn = $('#topbutton');
 
