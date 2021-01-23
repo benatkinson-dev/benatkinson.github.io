@@ -739,17 +739,3 @@ textarea:focus{background:#f4f4f4; height:250px;}
   opacity: 1;
   visibility: visible;
 }
-/*---------------------------------
-Search bar
-----------------------------------*/
-input[type=text] {
-  width: 130px;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
-  position: right;
-}
-
-/* When the input field gets focus, change its width to 100% */
-input[type=text]:focus {
-  width: 30%;
-}
