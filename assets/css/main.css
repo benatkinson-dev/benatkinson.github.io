@@ -864,11 +864,7 @@ a:hover
     color: #fff;
 }
 
-#contact #contact-form input.error,
-#contact #contact-form textarea.error
-{
-    background: red;
-}
+
 
 #contact #contact-form input
 {
