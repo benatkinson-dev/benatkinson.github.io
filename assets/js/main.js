@@ -1,50 +1,50 @@
-jQuery(window).on('load', function() {
-	"use strict";
-    
-    
-    // HIDE PRELOADER
-    $(".preloader").addClass("hide-preloader");   
-    
-    // SHOW/ANIMATE ANIMATION CONTAINER
-    setTimeout(function(){
+jQuery(window).on('load', function () {
+    "use strict";
 
-        $("#intro .animation-container").each(function() {
+
+    // HIDE PRELOADER
+    $(".preloader").addClass("hide-preloader");
+
+    // SHOW/ANIMATE ANIMATION CONTAINER
+    setTimeout(function () {
+
+        $("#intro .animation-container").each(function () {
 
             var e = $(this);
 
-            setTimeout(function(){
+            setTimeout(function () {
 
                 e.addClass("run-animation");
 
-            }, e.data("animation-delay") );
+            }, e.data("animation-delay"));
 
         });
 
-    }, 700 );
+    }, 700);
 
-    
+
 });
 
 
-jQuery(document).ready(function($) {
-	"use strict";
-    
-    
+jQuery(document).ready(function ($) {
+    "use strict";
+
+
     // SMOOTH SCROLL FOR SAME PAGE LINKS
-    $(document).on('click', 'a.smooth-scroll', function(event) {
-        
+    $(document).on('click', 'a.smooth-scroll', function (event) {
+
         event.preventDefault();
 
         $('html, body').animate({
-            scrollTop: $( $.attr(this, 'href') ).offset().top - 80
+            scrollTop: $($.attr(this, 'href')).offset().top - 80
         }, 500);
-        
+
     });
-    
-    
+
+
     // SCROLL REVEAL SETUP
     window.sr = ScrollReveal();
-    sr.reveal(".scroll-animated-from-right", { 
+    sr.reveal(".scroll-animated-from-right", {
         duration: 600,
         delay: 0,
         origin: "right",
@@ -54,10 +54,10 @@ jQuery(document).ready(function($) {
         viewFactor: 0.4,
         scale: 1,
     });
-    
-    
+
+
     // AJAX CONTACT FORM SUBMIT
-    $("#contact-form").submit(function(e) {
+    $("#contact-form").submit(function (e) {
 
         e.preventDefault();
         var postdata = $(this).serialize();
@@ -65,14 +65,14 @@ jQuery(document).ready(function($) {
         $.ajax({
 
             type: "POST",
-            url: "assets/php/contact.php",
+            url: "https://formspree.io/f/mbjpwadl",
             data: postdata,
             dataType: "json",
-            success: function(json) {
+            success: function (json) {
 
                 $("#contact-form input, #contact-form textarea").removeClass("error");
 
-                setTimeout(function(){
+                setTimeout(function () {
 
                     if (json.nameMessage !== "") {
 
@@ -98,7 +98,7 @@ jQuery(document).ready(function($) {
 
                     $("#contact-form.error input, #contact-form.error textarea").removeClass("error");
                     $('#contact-form').addClass("success");
-                    $('#contact-form textarea, #contact-form input').attr("placeholder","");
+                    $('#contact-form textarea, #contact-form input').attr("placeholder", "");
                     $('#contact-form input, #contact-form button, #contact-form textarea').val('').prop('disabled', true);
 
                 }
@@ -109,5 +109,5 @@ jQuery(document).ready(function($) {
 
     });
 
-    
+
 });
