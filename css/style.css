@@ -374,7 +374,7 @@ CONTENT
 .content .text-intro{
   width: 1140px;
   margin-top: 150px;
-  margin: auto;
+  margin: 10% auto 0;
 }
 
 .content .text-intro h1{
