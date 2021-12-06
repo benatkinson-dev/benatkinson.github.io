@@ -65,7 +65,7 @@ jQuery(document).ready(function ($) {
         $.ajax({
 
             type: "POST",
-            url: "https://formspree.io/f/mbjpwadl",
+            url: "assets/php/contact.php",
             data: postdata,
             dataType: "json",
             success: function (json) {
