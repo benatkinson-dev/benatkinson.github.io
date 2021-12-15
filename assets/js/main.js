@@ -56,3 +56,9 @@ jQuery(document).ready(function ($) {
     });
 
 });
+
+function submitForm() {
+    var frm = document.getElementsByName('contact-form')[0];
+    frm.reset();  // Reset all form data
+    return false; // Prevent page refresh
+ }
