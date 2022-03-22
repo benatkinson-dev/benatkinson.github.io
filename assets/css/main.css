@@ -330,7 +330,7 @@ a:hover
 #intro .container-mid
 {
     position: absolute;
-    top: 50%;
+    top: 60%;
 
     width: 100%;
 
@@ -517,7 +517,7 @@ a:hover
         position: relative;
         top: 0;
 
-        margin: 15vh 0;
+        margin: 5vh 0;
 
         -webkit-transform: translate(0);
             -ms-transform: translate(0);
@@ -1078,17 +1078,12 @@ a:hover
 }
 #typewriter {
     font-size: 2em;
-    margin: 0;
     font-family: "Courier New";
-    padding-top:20%;
-    
 }
 #typewriter:after {
     content: "|";
     animation: blink 500ms linear infinite alternate;
-}
-
-  
+}  
   @-webkit-keyframes blink{
     0%{opacity: 0;}
     100%{opacity: 1;}
