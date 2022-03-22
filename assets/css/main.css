@@ -1070,4 +1070,36 @@ a:hover
     color: #000;
     border-bottom: 1px solid #111;
 }
+.var-highlight {
+    color: #00bfe7;
+}
+.string-highlight {
+    color: #00bfe7;
+}
+#typewriter {
+    font-size: 2em;
+    margin: 0;
+    font-family: "Courier New";
+    padding-top:20%;
+    
+}
+#typewriter:after {
+    content: "|";
+    animation: blink 500ms linear infinite alternate;
+}
 
+  
+  @-webkit-keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+  }
+  
+  @-moz-keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+  }
+  
+  @keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+  }
