@@ -1069,7 +1069,8 @@ a:hover
 }
 .string-highlight {
     color: #00bfe7;
-}@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 1200px) {
 #typewriter {
     font-size: 2em;
     font-family: "Courier New";
@@ -1081,11 +1082,21 @@ a:hover
     animation: blink 500ms linear infinite alternate;
 }  
 }
+@media only screen and (max-width: 1190px) {
+    #typewriter {
+        font-size: 2em;
+        font-family: "Courier New";
+      
+    }
+    #typewriter:after {
+        content: "|";
+        animation: blink 500ms linear infinite alternate;
+    }  
 @media only screen and (max-width: 600px) {
     #typewriter {
         font-size: 2em;
         font-family: "Courier New";
-        margin-left:5%;
+       
     }
   }
   @-webkit-keyframes blink{
