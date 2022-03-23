@@ -111,7 +111,7 @@ function submitForm() {
             if (tagOpen) {
                 var newSpan = document.createElement("span");
                 t.appendChild(newSpan);
-                newSpan.innerHTML = tag;
+                newSpan.innerHTML = tag +"<br>";
                 tag = newSpan.firstChild;
             }
         }

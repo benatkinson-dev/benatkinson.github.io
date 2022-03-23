@@ -272,7 +272,6 @@ a:hover
 {
     position: relative;
     left: 0;
-
     width: 100%;
 }
 
@@ -280,7 +279,6 @@ a:hover
 {
     position: relative;
     left: 50%;
-    
     width: 50%;
     padding: 0 20px;
     overflow-x: hidden;
@@ -307,7 +305,6 @@ a:hover
     .content-area .content-area-inner
     {
         left: 0;
-
         width: 100%;
         padding: 0 20px;
     }
@@ -322,7 +319,6 @@ a:hover
 #intro
 {
     position: relative;
-
     height: 100vh;
     margin-bottom: 0;
 }
@@ -330,8 +326,7 @@ a:hover
 #intro .container-mid
 {
     position: absolute;
-    top: 60%;
-
+    top:60%;
     width: 100%;
 
     -webkit-transform: translateY(-50%);
@@ -1074,15 +1069,25 @@ a:hover
 }
 .string-highlight {
     color: #00bfe7;
-}
+}@media only screen and (min-width: 768px) {
 #typewriter {
     font-size: 2em;
     font-family: "Courier New";
+    margin-bottom:-25%;
+    margin-left:5%;
 }
 #typewriter:after {
     content: "|";
     animation: blink 500ms linear infinite alternate;
 }  
+}
+@media only screen and (max-width: 600px) {
+    #typewriter {
+        font-size: 2em;
+        font-family: "Courier New";
+        margin-left:5%;
+    }
+  }
   @-webkit-keyframes blink{
     0%{opacity: 0;}
     100%{opacity: 1;}
