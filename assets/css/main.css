@@ -520,6 +520,12 @@ a:hover
     }
 }
 
+/********* test section *******************/
+#typing
+{
+    position: relative;
+    margin-bottom: 0;
+}
 
 
 /** 6. Content Area --> About
@@ -1071,34 +1077,16 @@ a:hover
     color: #00bfe7;
 }
 @media only screen and (min-width: 1200px) {
-#typewriter {
-    font-size: 2em;
-    font-family: "Courier New";
-    margin-bottom:-25%;
-    margin-left:5%;
-}
-#typewriter:after {
-    content: "|";
-    animation: blink 500ms linear infinite alternate;
-}  
-}
-@media only screen and (max-width: 1190px) {
     #typewriter {
         font-size: 2em;
         font-family: "Courier New";
-      
+        margin-bottom:-25%;
     }
     #typewriter:after {
         content: "|";
         animation: blink 500ms linear infinite alternate;
     }  
-@media only screen and (max-width: 600px) {
-    #typewriter {
-        font-size: 2em;
-        font-family: "Courier New";
-       
-    }
-  }
+   
   @-webkit-keyframes blink{
     0%{opacity: 0;}
     100%{opacity: 1;}
@@ -1113,3 +1101,52 @@ a:hover
     0%{opacity: 0;}
     100%{opacity: 1;}
   }
+}
+@media only screen and (max-width: 1190px) {
+    #typewriter {
+        font-size: 2em;
+        font-family: "Courier New";
+        margin-bottom:15%;
+      
+    }
+    #typewriter:after {
+        content: "|";
+        animation: blink 500ms linear infinite alternate;
+        
+    }
+    @-webkit-keyframes blink{
+        0%{opacity: 0;}
+        100%{opacity: 1;}
+      }
+      
+      @-moz-keyframes blink{
+        0%{opacity: 0;}
+        100%{opacity: 1;}
+      }
+      
+      @keyframes blink{
+        0%{opacity: 0;}
+        100%{opacity: 1;}
+      }
+}  
+@media only screen and (max-width: 768px) {
+    #typewriter {
+        font-size: 2em;
+        font-family: "Courier New";
+       
+    }
+    @-webkit-keyframes blink{
+        0%{opacity: 0;}
+        100%{opacity: 1;}
+      }
+      
+      @-moz-keyframes blink{
+        0%{opacity: 0;}
+        100%{opacity: 1;}
+      }
+      
+      @keyframes blink{
+        0%{opacity: 0;}
+        100%{opacity: 1;}
+      }
+}
