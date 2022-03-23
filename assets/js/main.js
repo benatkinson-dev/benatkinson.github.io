@@ -133,5 +133,5 @@ document.getElementById('typewriter').style.visibility = "visible";
 var typer = document.getElementById('typewriter');
 typewriter = setupTypewriter(typewriter);
 typewriter.type();
-}, 1500);
+}, 2000);
 
