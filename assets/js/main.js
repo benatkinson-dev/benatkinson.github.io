@@ -63,11 +63,12 @@ function submitForm() {
     return false; // Prevent page refresh
  }
 
+
  function setupTypewriter(t) {
     var HTML = t.innerHTML;
 
     t.innerHTML = "";
-
+    
     var cursorPosition = 0,
         tag = "",
         writingTag = false,
@@ -127,11 +128,9 @@ function submitForm() {
         type: type
     };
 }
-
+;
 var typer = document.getElementById('typewriter');
-
 typewriter = setupTypewriter(typewriter);
-
 typewriter.type();
 
 
