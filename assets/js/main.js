@@ -63,7 +63,6 @@ function submitForm() {
     return false; // Prevent page refresh
  }
 
-
  function setupTypewriter(t) {
     var HTML = t.innerHTML;
 
@@ -127,11 +126,12 @@ function submitForm() {
     return {
         type: type
     };
-}
-;
+}; 
+
+setTimeout(() => {
+document.getElementById('typewriter').style.visibility = "visible";
 var typer = document.getElementById('typewriter');
 typewriter = setupTypewriter(typewriter);
 typewriter.type();
-
-
+}, 1500);
 
