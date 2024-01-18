@@ -315,7 +315,6 @@ a:hover
 /** 5. Content Area --> Intro
 *******************************************************************/
 
-
 #intro
 {
     position: relative;
@@ -326,7 +325,7 @@ a:hover
 #intro .container-mid
 {
     position: absolute;
-    top:60%;
+    top:30%;
     width: 100%;
 
     -webkit-transform: translateY(-50%);
@@ -340,7 +339,6 @@ a:hover
     line-height: 1.6em;
 
     margin-top: 2em;
-    margin-bottom: 2.2em;
 }
 
 #intro .container-mid a
@@ -525,6 +523,7 @@ a:hover
 {
     position: relative;
     margin-bottom: 0;
+    top:50%;
 }
 
 
